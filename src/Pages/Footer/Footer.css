@@ -1,0 +1,20 @@
+.footerContainer{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(26, 26, 26);
+    height: 50vh;
+    padding: 50px;
+}
+.footerFirstComponets{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.footerFirstComponets>div>img{
+    width: 200px;
+}
+/* .footerSecondComponets{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+      
+} */
