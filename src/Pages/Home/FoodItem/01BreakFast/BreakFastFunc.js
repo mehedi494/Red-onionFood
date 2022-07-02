@@ -17,7 +17,7 @@ const BreakFastFunc = () => {
         <div>
           
             <div className='container px-4 my-3'>
-                <div className="row justify-content-around overflow-hidden">
+                <div className="row justify-content-evenly  overflow-hidden">
                     {
                         data?.map(food => <BreakFastDisplay key={food.id} food={food}></BreakFastDisplay>)
                     }
