@@ -1,15 +1,22 @@
 .navbar{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    display: flex;
+    margin-right: 10px;
 }
 .logoImg{
     width: 150px;
     
 
 }
-.btn{
-    background-color: rgb(168, 55, 74);
-    
-    padding: 7px 30px;
-    border-radius: 20px;
+
+.headerNav{
+    color: rgb(54, 52, 52);
+}
+.displayimg{
+    width: 50px;
+ border-radius: 50%;
+
+
+
 }

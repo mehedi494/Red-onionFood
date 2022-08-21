@@ -1,25 +1,27 @@
+
 import React, { useEffect, useState } from 'react';
 
 import BreakFastDisplay from './BreakFastDisplay';
+import Banner from './../../HomeComponent/Banner';
+import Navbar from './../../Navbar/Navbar';
+
+import useFoods from '../../../../Hooks/useFoods';
 
 const BreakFastFunc = () => {
-    const [data, SetData] = useState([])
-    useEffect(() => {
-        fetch('./fakeDb/breakfast.json')
-            .then(res => res.json())
-            .then(res => {
-                SetData(res)
-            })
-    }, []);
-    console.log(data)
+   
+    const [food]= useFoods([])
+    const filteredData = food.filter(x => x.type ==="breakfast")
+    // console.log(food)
+    
         
     return (
         <div>
-          
-            <div className='container px-4 my-3'>
+            <Banner></Banner>
+            <Navbar />
+            <div className='container px-4 my-3' id='foodContainer'>
                 <div className="row justify-content-evenly  overflow-hidden">
                     {
-                        data?.map(food => <BreakFastDisplay key={food.id} food={food}></BreakFastDisplay>)
+                        filteredData?.map(food => <BreakFastDisplay key={food.id} food={food}></BreakFastDisplay>)
                     }
                 </div>
             </div>

@@ -1,0 +1,9 @@
+.imgHover{
+    margin-right: 10px;
+    
+    
+}
+.imgHover:hover{
+    background-color: rgb(225, 228, 228);
+    border-radius: 5px;
+}

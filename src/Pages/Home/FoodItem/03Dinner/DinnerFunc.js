@@ -2,24 +2,24 @@ import React, { useEffect, useState } from 'react';
 
 
 import DinnerDisplay from './DinnerDisplay';
+import Banner from './../../HomeComponent/Banner';
+import Navbar from '../../Navbar/Navbar';
+import useFoods from '../../../../Hooks/useFoods';
+
 
 const DinnerFunc = () => {
-    const [data, SetData] = useState([])
-    useEffect(() => {
-        fetch('./fakeDb/dinner.json')
-            .then(res => res.json())
-            .then(res => {
-                SetData(res)
-            })
-    }, []);
-    console.log(data)
+
+    const [food] = useFoods([])
+    const filteredData = food.filter(x => x.type === "dinner")
+    // console.log(food)
     return (
         <div>
-
-            <div className='container px-4 my-3'>
+            <Banner></Banner>
+            <Navbar />
+            <div className='container px-4 my-3' id='foodContainer'>
                 <div className="row justify-content-evenly overflow-hidden">
                     {
-                        data?.map(food => <DinnerDisplay key={food.id} food={food}></DinnerDisplay>)
+                        filteredData?.map(food => <DinnerDisplay key={food.id} food={food}></DinnerDisplay>)
                     }
                 </div>
             </div>
