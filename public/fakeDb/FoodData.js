@@ -7,7 +7,7 @@ const obj = [
         description: "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
         img: "https://i.ibb.co/dD5fgnP/breakfast1.png",
         price: 23.99,
-        type: "brakfast",
+        type: "breakfast",
     },
     {
         id: 102,
@@ -16,7 +16,7 @@ const obj = [
         description: "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
         img: "https://i.ibb.co/r7cm7Jw/breakfast2.png",
         price: 9.99,
-        type: "brakfast",
+        type: "breakfast",
     },
     {
         id: 103,
@@ -25,7 +25,7 @@ const obj = [
         description: "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
         img: "https://i.ibb.co/9bLT0Dn/breakfast3.png",
         price: 6.92,
-        type: "brakfast",
+        type: "breakfast",
     },
     {
         id: 104,
@@ -34,7 +34,7 @@ const obj = [
         "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
         img: "https://i.ibb.co/9Hmpjdz/breakfast4.png",
         price: 8.51,
-        type: "brakfast",
+        type: "breakfast",
     },
     {
         id: 105,
@@ -43,7 +43,7 @@ const obj = [
         description: "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting charming",
         img: "https://i.ibb.co/WvrG04w/breakfast5.png",
         price: 15.24,
-        type: "brakfast",
+        type: "breakfast",
     },
     {
         id: 106,
@@ -52,7 +52,7 @@ const obj = [
         description: "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
         img: "https://i.ibb.co/4WY9qjG/breakfast6.png",
         price: 7.89,
-        type: "brakfast",
+        type: "breakfast",
     },
     {
         id: 201,

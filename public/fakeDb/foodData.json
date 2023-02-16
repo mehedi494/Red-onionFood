@@ -60,7 +60,7 @@
     "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
     "img": "https://i.ibb.co/WWwsnps/lunch1.png",
     "price": 32.15,
-    "type": "lunce"
+    "type": "lunch"
   },
   {
     "id": 202,
@@ -69,7 +69,7 @@
     "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
     "img": "https://i.ibb.co/qmtWQ0w/lunch2.png",
     "price": 40.51,
-    "type": "lunce"
+    "type": "lunch"
   },
   {
     "id": 203,
@@ -78,16 +78,16 @@
     "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
     "img": "https://i.ibb.co/JxF6YcB/lunch3.png",
     "price": 36.10,
-    "type": "lunce"
+    "type": "lunch"
   },
   {
     "id": 204,
-    "name": "Indian Lunce",
+    "name": "Indian lunch",
     "caption": "How we dream about our future",
     "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
     "img": "https://i.ibb.co/L8sk4SS/lunch4.png",
     "price": 60.00,
-    "type": "lunce"
+    "type": "lunch"
   },
   {
     "id": 205,
@@ -96,7 +96,7 @@
     "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
     "img": "https://i.ibb.co/VHQ6HRy/lunch5.png",
     "price": 19.38,
-    "type": "lunce"
+    "type": "lunch"
   },
   {
     "id": 206,
@@ -105,7 +105,7 @@
     "description": "How do you describe food Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth- watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming",
     "img": "https://i.ibb.co/FqvbmWN/lunch6.png",
     "price": 46.24,
-    "type": "lunce"
+    "type": "lunch"
   },
   {
     "id": 301,

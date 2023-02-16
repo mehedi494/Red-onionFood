@@ -1,0 +1,29 @@
+.navContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    
+    
+
+}
+.navlink{
+cursor: pointer;
+user-select: none;
+color: dimgrey;
+text-transform: uppercase;
+
+/* text-decoration: none; */
+margin-right: 5px;
+margin-left: 5px;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 600;
+line-height: 10px;
+
+}
+
+.navlink:active{
+    border: 0 0 1px 0 solid red ;
+}

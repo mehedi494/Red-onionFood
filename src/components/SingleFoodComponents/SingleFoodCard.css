@@ -1,0 +1,15 @@
+.counterDiv{
+    display: inline;
+    padding: 10px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 30px;
+    margin-bottom: 10px;
+   
+}
+.Countbtn{
+    border: 0px;
+    text-align: center;
+    color: rgb(218, 28, 59);
+    background-color: white;
+    font-weight: 500;
+}
