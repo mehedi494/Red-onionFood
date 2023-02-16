@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router';
 
 
 import { Foods,Banner, Dinner,Lunch,SubNavbar} from '../../components';
+import SingleFoodReview from '../SingleFoodReview/SingleFoodReview';
+
 // import BreakFastDisplay from './../../components/01BreakFast/BreakFastDisplay';
 // import BreakFastFunc from './../../components/01BreakFast/BreakFastFunc';
 
@@ -20,6 +22,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <SubNavbar setCategories={setCategories}></SubNavbar>
+    <SingleFoodReview></SingleFoodReview>
            {/* <Foods categories={categories}></Foods> */}
             {/* <Lunch></Lunch> */}
             <Routes>

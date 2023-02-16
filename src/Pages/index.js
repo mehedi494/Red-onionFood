@@ -5,11 +5,11 @@ import Login from '../Pages/LogIn/Login'
 import NavBar from '../Pages/Navbar/Nav'
 import SignUp from '../Pages/Signup/Signup'
 import PrivetRoute from '../Pages/PrivetRoute/PrivetRoute';
-import SingleFood from '../Pages/SingleFoodReview/SingleFoodReview';
+import SingleFoodReview from '../Pages/SingleFoodReview/SingleFoodReview';
 
 
 
 export {
-    Home, Cart, Footer, Login, NavBar, SignUp, PrivetRoute, SingleFood
+    Home, Cart, Footer, Login, NavBar, SignUp, PrivetRoute, SingleFoodReview
 
 }

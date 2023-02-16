@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './otherFoodCard.css';
 
-const otherFoodCard = (props) => {
-    const { img,id } = props.food
+const OtherFoodCard = ({food}) => {
     
-    console.log(props.food);
+    const { img,id } = food
+    
+    
     return (
         <div className='imgHover'>
             <Link to={`/food/${id}`} className="">
@@ -17,4 +18,4 @@ const otherFoodCard = (props) => {
     );
 };
 
-export default otherFoodCard;
+export default OtherFoodCard;

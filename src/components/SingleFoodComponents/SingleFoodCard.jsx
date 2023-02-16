@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import "./SingleFoodCard.css";
 
 const SingleFoodCard = (props) => {
-    console.log(props.food);
+    // console.log(props.food);
     const { id,name, img, caption, description, price,type } = props?.food;
     const [count, Setcount]= useState(1)
     console.log(props.food);

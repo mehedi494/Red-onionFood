@@ -8,7 +8,8 @@ import Footer from './Pages/Footer/Footer';
 
 import AuthProvider from './Context/AuthProvider';
 // import PrivetRoute from './PrivetRoute/PrivetRoute';
-import { Home, Cart, Login, NavBar, SignUp, PrivetRoute,SingleFood } from './Pages/index';
+import { Home, Cart, Login, NavBar, SignUp, PrivetRoute, SingleFoodReview } from './Pages/index';
+
 
 
 
@@ -27,7 +28,7 @@ function App() {
           <Routes>
             <Route path="/*" element={<Home/> } />
             
-            <Route path="/food/:foodId" element={<SingleFood />} />
+            <Route path="/food/:foodId" element={<SingleFoodReview />} />
 
             <Route path="/signup" element={< SignUp />} />
             <Route element={<PrivetRoute />}>
