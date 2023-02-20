@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
-const useFoods = () => {
+const UseFoods = () => {
 
 
     const [food, SetFood] = useState([])
-    
+
     useEffect(() => {
         fetch('./fakeDb/foodData.json')
             .then(res => res.json())
@@ -18,4 +18,4 @@ const useFoods = () => {
 };
 
 
-export default useFoods;
+export default UseFoods;

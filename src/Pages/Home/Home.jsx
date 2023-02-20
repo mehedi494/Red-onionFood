@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect,useState } from 'react';
 import { Route, Routes } from 'react-router';
+import { Foods,Banner,SubNavbar} from '../../components';
 
 
-import { Foods,Banner, Dinner,Lunch,SubNavbar} from '../../components';
-import SingleFoodReview from '../SingleFoodReview/SingleFoodReview';
 
-// import BreakFastDisplay from './../../components/01BreakFast/BreakFastDisplay';
-// import BreakFastFunc from './../../components/01BreakFast/BreakFastFunc';
+
 
 
 
@@ -16,20 +14,31 @@ import SingleFoodReview from '../SingleFoodReview/SingleFoodReview';
 
 const Home = () => {
     const [categories, setCategories] = useState('')
-
-    
+    const [food, SetFood] = useState([])
+       const [search, setSearch] = useState('')
+       const [match, setMatch] = useState([])
+    useEffect(() => {
+     fetch('./fakeDb/foodData.json')
+            .then(res => res.json())
+         .then(res => {
+             SetFood(res)
+            })
+     
+             const result = food.filter((x) =>(x.name.toLowerCase().match(search)))
+              
+                setMatch(result);
+  },[search])
+   
     return (
         <div>
-            <Banner></Banner>
+            <Banner setSearch={setSearch}></Banner>
             <SubNavbar setCategories={setCategories}></SubNavbar>
-    <SingleFoodReview></SingleFoodReview>
-           {/* <Foods categories={categories}></Foods> */}
-            {/* <Lunch></Lunch> */}
+ 
             <Routes>
-                <Route path='/' element={ <Foods categories={categories}></Foods>}></Route>
-                <Route path='breakfast' element={ <Foods categories={categories}></Foods>}></Route>
-                <Route path='lunch' element={ <Foods categories={categories}></Foods>}></Route>
-                <Route path='dinner' element={ <Foods categories={categories}></Foods>}></Route>
+                <Route path='/' element={ <Foods match={match} categories={categories}></Foods>}></Route>
+                <Route path='breakfast' element={ <Foods match={match} categories={categories}></Foods>}></Route>
+                <Route path='lunch' element={ <Foods match={match} categories={categories}></Foods>}></Route>
+                <Route path='dinner' element={ <Foods match={match} categories={categories}></Foods>}></Route>
             </Routes>
            
 

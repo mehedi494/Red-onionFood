@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from './Pages/Footer/Footer';
 
 
+
 import AuthProvider from './Context/AuthProvider';
 // import PrivetRoute from './PrivetRoute/PrivetRoute';
 import { Home, Cart, Login, NavBar, SignUp, PrivetRoute, SingleFoodReview } from './Pages/index';
@@ -19,7 +20,7 @@ function App() {
  
 
   return (
-    <div className="App">
+    <div className="App width-100vw">
 
       <AuthProvider>
         <BrowserRouter>

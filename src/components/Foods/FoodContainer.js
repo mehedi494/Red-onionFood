@@ -3,12 +3,12 @@
 
 import FoodCard from './FoodCard';
 
-import useFoods from '../../Hooks/useFoods';
+import UseFoods from '../../Hooks/useFoods';
 
 
 
-const FoodContainer = ({ categories })=>  {
-    const [food] = useFoods()
+const FoodContainer = ({ categories ,match}) => {
+    const [food] = UseFoods()
 
     let filterFood = []
 
@@ -16,13 +16,20 @@ const FoodContainer = ({ categories })=>  {
     if (categories) {
 
         filterFood = food.filter((e) => e.type == categories)
-       
-        console.log("filterfood", filterFood);
+
+        // console.log("filterfood", filterFood);
     }
+    if (match.length) {
+
+        filterFood = [...match]
+
+        // console.log("filterfood", filterFood);
+    }
+
     else {
         filterFood = food
     }
-  
+
     return (
 
 
@@ -35,7 +42,8 @@ const FoodContainer = ({ categories })=>  {
 
             <div className='container px-4 my-3' id='foodContainer'>
                 <div className=" row justify-content-evenly  overflow-hidden">
-
+                    
+                    {match.length ? <p> by Search found <span className="fw-bold">{match.length}</span></p>: " "}
 
 
                     {

@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../Hooks/useAuth';
+import  {FontAwesomeIcon}  from '@fortawesome/react-fontawesome';
 
 
 
@@ -29,7 +30,7 @@ const Header = () => {
                         <div className="me-auto d-flex  align-items-center">
                             <NavLink className="headerNav  text-decoration-none me-4" to="/">Home</NavLink>
                             <HashLink className='headerNav  text-decoration-none me-4' to="#foodContainer">Food</HashLink>
-                            <NavLink className="headerNav  text-decoration-none me-4" to="/Cart">Cart</NavLink>
+                            <NavLink className="headerNav  text-decoration-none me-4" to="/Cart">Cart <FontAwesomeIcon icon="fa-regular fa-cart-shopping" /></NavLink>
 
                             
 
@@ -39,7 +40,7 @@ const Header = () => {
                                     <Button className='btn'>Sign up</Button></NavLink>
                             </div>}
 
-                            {user.email && <div className='d-flex mx-4 '> <img className='displayimg ' src={user.photoURL} alt="" /> <p className='m-2'>Hello, {user.displayName?.toUpperCase()}</p>
+                            {user.email && <div className='d-flex mx-4 '> <img className='displayimg ' src={user.photoURL} alt="" /> <p className='m-2'> {user.displayName?.toUpperCase()}</p>
                                 
                                         <button onClick={signOutHandler} className='btn btn-danger ms-2'>LOG OUT</button> </div>}
                          

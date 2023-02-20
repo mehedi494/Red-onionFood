@@ -3,18 +3,24 @@ import { useParams } from 'react-router';
 // import useFoods from '../../Hooks/useFoods';
 import SingleFoodCard from '../../components/SingleFoodComponents/SingleFoodCard';
 import OtherFoodCard from '../../components/otherFoods/otherFoodCard';
+import toast, { Toaster } from 'react-hot-toast';
 
 const SingleFoodReview = () => {
+
     const { foodId } = useParams()
     const [singleFoodData, SetsinglefoodData] = useState([])
     useEffect(() => {
+        toast.loading("Loading ...")
+        
         fetch('/fakeDb/foodData.json')
             .then(res => res.json())
             .then(res => {
                 SetsinglefoodData(res)
-
+                
             })
-    }, []);
+        toast.success("Done")
+        toast.dismiss()
+        }, []);
 
 
     const singlefood = singleFoodData.filter(foods => foods.id == foodId)
@@ -27,7 +33,7 @@ const SingleFoodReview = () => {
 
     return (
         <div>
-
+           
             {
                 singlefood?.map(food => <SingleFoodCard key={food.id} food={food}></SingleFoodCard>)
 
@@ -38,6 +44,7 @@ const SingleFoodReview = () => {
                     otherData.map(food => <OtherFoodCard food={food} ></OtherFoodCard>)
                 }
             </div>
+            <Toaster reverseOrder={false} ></Toaster>
         </div>
     );
 };

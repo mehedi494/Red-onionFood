@@ -89,13 +89,15 @@ const Login = () => {
                 </div>
             </form>
             <div className='bottom-body'>
-                <h3 style={{ color: "#78B83C" }} >Sign up for new users ! <NavLink className="text-decoration-none" to="/signup">  sign up..</NavLink></h3>
-                <hr />
-                <h4 style={{ color: "#298031" }}>Altrenative Log in with </h4>
+                 {/* <hr /> */}
+                <p style={{ color: "#78B83C", fontWeight:"10px" }} >Sign up for new users ! <NavLink className="text-decoration-none" to="/signup">  sign up..</NavLink></p>
+               
+                <p style={{ color: "#298031" }}>Altrenative Log in with </p>
                 <div>
 
-                    <button className='btn btn-secondary text-white my-3 mx-3' onClick={GoogleHandlder} >Google</button> <p className='d-inline'>or</p>
-                    <button className='btn btn-secondary text my-3 mx-3'>Facebook</button>
+                    <button className='btn btn-secondary text-white my-1 mx-3' onClick={GoogleHandlder} >Google</button>
+                    {/* <p className='d-inline'>or</p>
+                    <button className='btn btn-secondary text my-3 mx-3'>Facebook</button> */}
 
                 </div>
           </div>
