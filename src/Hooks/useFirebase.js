@@ -36,7 +36,7 @@ const useFirebase = () => {
                 Setuser(user)
             }
         })
-    }, [])
+    }, [auth])
 
     const googleHandler = () => {
         const Googleprovider = new GoogleAuthProvider();
