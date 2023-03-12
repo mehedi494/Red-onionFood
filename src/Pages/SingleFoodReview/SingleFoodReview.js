@@ -23,12 +23,12 @@ const SingleFoodReview = () => {
         }, []);
 
 
-    const singlefood = singleFoodData.filter(foods => foods.id == foodId)
+    const singlefood = singleFoodData.filter(foods => foods.id === foodId)
     // console.log(singlefood);
 
     // const otherData = singleFoodData.filter(foods => foods.id != foodId && singlefood[0].type == foods.type)
 
-    const otherData = singleFoodData.filter(foods => foods.id != foodId && singlefood[0].type == foods.type)
+    const otherData = singleFoodData.filter(foods => foods.id !== foodId && singlefood[0].type === foods.type)
    
 
     return (

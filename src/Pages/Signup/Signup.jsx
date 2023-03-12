@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import "./Signup.css"
-import { useLocation, useNavigate } from 'react-router';
+import {  useNavigate } from 'react-router';
 
 
 
@@ -15,10 +15,8 @@ const Signup = () => {
 
     const [email, SetEmail] = useState(" ")
     const [password, SetPassword] = useState(" ")
-    const [name, SetUserName] = useState(" ")
-    const [error, SetError] = useState(" ")
-
-    const location = useLocation()
+    // const [name, SetUserName] = useState(" ")
+   
     const navigate = useNavigate()
 
     const handleRegistrationForm = e => {
@@ -53,7 +51,7 @@ const Signup = () => {
     // }
     const handleName = e => {
 
-        SetUserName(e.target.value)
+        // SetUserName(e.target.value)
     }
 
 
@@ -112,7 +110,7 @@ const Signup = () => {
                 </div>
                 <div><h2 style={{ color: "#07C273" }}>Are you exitsting user? <Link className='text-decoration-none' to='/login'>Click here</Link></h2></div>
             </div>
-            <h5 className='text-danger'>{error}</h5>
+          
 
         </div>
     );

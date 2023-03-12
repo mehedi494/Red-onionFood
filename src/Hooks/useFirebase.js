@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GoogleAuthProvider, getAuth, signInWithPopup, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth';
+import { GoogleAuthProvider, getAuth, signInWithPopup, createUserWithEmailAndPassword,  signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth';
 
 import Authentication from '../FIrebase/Firebase.init';
 

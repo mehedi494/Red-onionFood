@@ -4,15 +4,15 @@ import "./SingleFoodCard.css";
 
 const SingleFoodCard = (props) => {
     // console.log(props.food);
-    const { id,name, img, caption, description, price,type } = props?.food;
+    const { name, img,  description, price, } = props?.food;
     const [count, Setcount]= useState(1)
     console.log(props.food);
     const countFunc = (isAdding) => {
-        if (isAdding ==true) {
+        if (isAdding ===true) {
             const newCount = count + 1;
             Setcount(newCount)
         }
-        else if (isAdding == false){
+        else if (isAdding === false){
             if (count > 0) {
                 const newCount = count - 1;
                 Setcount(newCount)
