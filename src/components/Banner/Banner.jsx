@@ -1,8 +1,6 @@
 
 import React from 'react';
 import './Banner.css';
-import { Button } from 'react-bootstrap';
-import UseFoods from '../../Hooks/useFoods';
 
 const Banner = ({setSearch }) => {
   
@@ -12,7 +10,7 @@ const Banner = ({setSearch }) => {
             <div className='bannerbox '>
                 <h1 className='searchfoodTitle fw-bold '>Best food waiting for belly</h1>
                 <div>
-                    <input onKeyUp={(e)=>setSearch(e.target.value.toLowerCase())} placeholder='Search food item' className="inputfield" type="text" />
+                    <input onKeyDown={(e)=>setSearch(e.target.value.toLowerCase())} placeholder='Search food item' className="inputfield" type="text" />
                 {/* <Button className='input-btn btn btn-light    btn-outline-success' > Search</Button> */}
                 </div>
             </div>

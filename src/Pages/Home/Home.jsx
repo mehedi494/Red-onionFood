@@ -24,21 +24,22 @@ const Home = () => {
              SetFood(res)
             })
      
-  },[])
+  },[search])
 
     let content;
-    if (categories) {
+    
+    if (search?.length) {
+         content = foods.filter(match => match.name.toLowerCase().includes(search))
+          
+    }
+    else if (categories.length) {
         content = foods.filter(match => match.type === categories)
     }
-    else {
-        content= foods
+    else{
+        content = foods
+      
     }
-       console.log(content)
-        //  else {
-        //      content = foods
-        //      console.log(content)
-        //  }
-    
+ 
    
     return (
         <div>

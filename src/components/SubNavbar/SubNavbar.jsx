@@ -12,10 +12,7 @@ import './Navbar.css'
 
 const Navbar = ({ setCategories }) => {
    
-    
-
-   
-   
+ 
     let activeStyle = {
         textDecoration: "none",
         borderBottom: "1px solid red",
@@ -29,13 +26,12 @@ const Navbar = ({ setCategories }) => {
         color: "rgb(56, 51, 51)"
     }
 
-
     return (
 
         // <Route>
              <div>
             <div className='navContainer '>                
-                <NavLink onClick={()=>setCategories('')} to='/' style={({ isActive }) =>
+                <NavLink onClick={()=>setCategories(null)} to='/' style={({ isActive }) =>
                     isActive ? activeStyle : notActive
                 }><h5 className='navlink '>all</h5>
                 </NavLink>
