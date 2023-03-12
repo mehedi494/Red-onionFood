@@ -14,9 +14,9 @@ import { Foods,Banner,SubNavbar} from '../../components';
 
 const Home = () => {
     const [categories, setCategories] = useState('')
-    const [food, SetFood] = useState([])
+    const [foods, SetFood] = useState([])
        const [search, setSearch] = useState('')
-       const [match, setMatch] = useState([])
+    //    const [match, setMatch] = useState([])
     useEffect(() => {
      fetch('./fakeDb/foodData.json')
             .then(res => res.json())
@@ -24,22 +24,28 @@ const Home = () => {
              SetFood(res)
             })
      
-             const result = food.filter((x) =>(x.name.toLowerCase().match(search)))
-              
-                setMatch(result);
-  },[search])
+  },[])
+
+    let content;
+    if (categories) {
+        content = foods.filter(match => match.type === categories)
+    }
+    else {
+        content= foods
+    }
+       console.log(content)
+        //  else {
+        //      content = foods
+        //      console.log(content)
+        //  }
+    
    
     return (
         <div>
             <Banner setSearch={setSearch}></Banner>
             <SubNavbar setCategories={setCategories}></SubNavbar>
- 
-            <Routes>
-                <Route path='/' element={ <Foods match={match} categories={categories}></Foods>}></Route>
-                <Route path='breakfast' element={ <Foods match={match} categories={categories}></Foods>}></Route>
-                <Route path='lunch' element={ <Foods match={match} categories={categories}></Foods>}></Route>
-                <Route path='dinner' element={ <Foods match={match} categories={categories}></Foods>}></Route>
-            </Routes>
+           <Foods content={content}></Foods>
+         
            
 
 
